@@ -6,10 +6,10 @@
  <title>Our Story — Best Western Extended Stay Vernal Utah</title>
  <meta name="description" content="Watch the transformation of the Executive Inn into Best Western Extended Stay Vernal, Utah. Spacious rooms, free hot breakfast, heated floors, and a warm welcome every day.">
  <meta name="robots" content="index, follow">
- <link rel="canonical" href="https://bestwesternvernal.com/video.html">
+ <link rel="canonical" href="https://bestwesternvernalinn.com/video.html">
  <meta property="og:title" content="Our Story — Best Western Extended Stay Vernal Utah">
  <meta property="og:description" content="Watch the transformation of the Executive Inn into Best Western Extended Stay — your home away from home in Vernal, Utah.">
- <meta property="og:url" content="https://bestwesternvernal.com/video.html">
+ <meta property="og:url" content="https://bestwesternvernalinn.com/video.html">
  <meta property="og:type" content="video.other">
  <link rel="icon" href="images/logo.webp" type="image/webp">
  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -201,7 +201,7 @@
      <h2 class="cap-title"><em>Best Western</em><br>Extended Stay</h2>
      <p class="cap-sub" style="margin:0 auto;">Free Breakfast &nbsp;·&nbsp; Free WiFi &nbsp;·&nbsp; Free Parking &nbsp;·&nbsp; Full Kitchenettes &nbsp;·&nbsp; Pet Friendly &nbsp;·&nbsp; 24-Hr Front Desk</p>
      <div class="cap-cta" style="justify-content:center;">
-       <a href="https://www.executiveinndinosaur.com" target="_blank">Book Your Stay</a>
+       <a href="https://www.theworld24.com/booking/executiveinnsuites.php" target="_blank">Book Your Stay</a>
        <span class="phone">📞 <strong>(435) 789-6625</strong></span>
      </div>
    </div>
@@ -233,14 +233,14 @@
    <h2 class="outro-title"><em>Come Feel</em><br>at Home.</h2>
    <p class="outro-sub">Whether you're here for the night or settling in for a while — Best Western Extended Stay Vernal has everything you need, and then some.</p>
    <div class="outro-btns">
-     <a href="https://www.executiveinndinosaur.com" class="ob-book" target="_blank">Book Your Room</a>
+     <a href="https://www.theworld24.com/booking/executiveinnsuites.php" class="ob-book" target="_blank">Book Your Room</a>
      <a href="#yt-hero" class="ob-fullvideo" id="btn-watch-video" onclick="document.getElementById('outro').classList.remove('show');">▶ &nbsp; Watch Full Video</a>
      <a href="#" class="ob-replay" id="btn-replay">↺ &nbsp; Watch Again</a>
    </div>
    <p class="outro-address">
      1935 South 1500 East, Vernal, UT 84078<br>
      <a href="tel:4357896625">(435) 789-6625</a> &nbsp;·&nbsp;
-     <a href="https://www.executiveinndinosaur.com" target="_blank">executiveinndinosaur.com</a>
+     <a href="https://bestwesternvernalinn.com" target="_blank">bestwesternvernalinn.com</a>
    </p>
  </div>
 
@@ -248,37 +248,23 @@
       PLAYER CONTROLS
  ════════════════════════════════════════ -->
  <div id="controls">
-   <!-- Progress bar -->
    <div id="progress-track" id="ptrack">
      <div id="progress-fill"></div>
    </div>
-
-   <!-- Control row -->
    <div class="ctrl-row">
      <div class="ctrl-left">
-       <!-- Prev -->
        <button class="ctrl-btn" id="btn-prev" title="Previous scene">⏮</button>
-       <!-- Play/Pause -->
        <button class="ctrl-btn" id="play-pause" title="Play / Pause">⏸</button>
-       <!-- Next -->
        <button class="ctrl-btn" id="btn-next" title="Next scene">⏭</button>
-
-       <!-- Time -->
        <div class="ctrl-time"><span id="cur-time">0:00</span> / <span id="tot-time">1:07</span></div>
-
-       <!-- Scene label -->
        <div class="scene-title-bar" id="scene-label">A New Chapter Begins</div>
      </div>
-
      <div class="ctrl-right">
-       <!-- Vol (decorative) -->
        <div class="vol-wrap">
          <span class="vol-icon">🔈</span>
          <div class="vol-track"><div class="vol-fill"></div></div>
        </div>
-       <!-- Speed -->
        <div class="speed-badge" id="speed-btn" title="Playback speed">1×</div>
-       <!-- Fullscreen -->
        <button class="ctrl-btn" id="btn-fs" title="Fullscreen">⛶</button>
      </div>
    </div>
@@ -304,15 +290,12 @@
      YOUTUBE FULL-SCREEN HERO SECTION
 ════════════════════════════════════════ -->
 <section id="yt-hero">
-
  <div class="yt-hero-header">
    <p class="yt-hero-eyebrow">✦ The Full Story ✦</p>
    <h2 class="yt-hero-title">See the <em>Transformation</em><br>for Yourself.</h2>
    <p class="yt-hero-sub">From the Executive Inn to Best Western Extended Stay — watch the full walkthrough and discover every corner of your new home away from home in Vernal, Utah.</p>
  </div>
-
  <div class="yt-accent-line"></div>
-
  <div class="yt-video-wrap">
    <iframe
      width="560"
@@ -324,12 +307,10 @@
      allowfullscreen>
    </iframe>
  </div>
-
  <div class="yt-hero-footer">
    <p>Free Breakfast &nbsp;·&nbsp; Free WiFi &nbsp;·&nbsp; Free Parking &nbsp;·&nbsp; Pet Friendly</p>
-   <a href="https://www.executiveinndinosaur.com" class="yt-book-btn" target="_blank">Book Your Stay</a>
+   <a href="https://www.theworld24.com/booking/executiveinnsuites.php" class="yt-book-btn" target="_blank">Book Your Stay</a>
  </div>
-
 </section>
 
 <script>
@@ -345,11 +326,9 @@ let ticker   = null;
 let elapsed  = 0;
 let speedMul = 1;
 
-// Each scene's duration in seconds
 const durations = scenes.map(s => parseInt(s.dataset.duration) || 6);
 const totalDur  = durations.reduce((a,b) => a+b, 0);
 
-// Precompute scene start times for progress bar
 const sceneStarts = [];
 let acc = 0;
 durations.forEach(d => { sceneStarts.push(acc); acc += d; });
@@ -384,33 +363,24 @@ sceneStarts.slice(1).forEach(st => {
  ptrack.appendChild(dot);
 });
 
-/* ── Go to scene ── */
 function goScene(n, autoPlay = true) {
  if (n < 0 || n >= totalScenes) return;
  scenes[current].classList.remove('active');
  document.querySelectorAll('.thumb')[current].classList.remove('active');
-
  current = n;
  elapsed = 0;
-
  scenes[current].classList.add('active');
  document.querySelectorAll('.thumb')[current].classList.add('active');
-
- // Restart Ken Burns
  const bg = scenes[current].querySelector('.scene-bg');
  bg.style.transition = 'none';
  bg.offsetHeight;
  bg.style.transition = `transform ${durations[current] / speedMul}s ease-out`;
  bg.style.transform = 'scale(1)';
-
- // Update label
  document.getElementById('scene-label').textContent = scenes[current].dataset.label;
-
  if (autoPlay && !playing) startPlay();
  updateProgress();
 }
 
-/* ── Progress & time display ── */
 function updateProgress() {
  const globalElapsed = sceneStarts[current] + elapsed;
  const pct = (globalElapsed / totalDur) * 100;
@@ -425,7 +395,6 @@ function fmt(s) {
  return `${m}:${sec.toString().padStart(2,'0')}`;
 }
 
-/* ── Play / pause ── */
 function startPlay() {
  if (playing) return;
  playing = true;
@@ -442,7 +411,6 @@ function togglePlay() {
  playing ? pausePlay() : startPlay();
 }
 
-/* ── Tick ── */
 function tick() {
  elapsed += 0.25 * speedMul;
  updateProgress();
@@ -457,33 +425,24 @@ function tick() {
  }
 }
 
-/* ── Outro ── */
-function showOutro() {
- document.getElementById('outro').classList.add('show');
-}
-function hideOutro() {
- document.getElementById('outro').classList.remove('show');
-}
+function showOutro() { document.getElementById('outro').classList.add('show'); }
+function hideOutro() { document.getElementById('outro').classList.remove('show'); }
 
-/* ── Intro → Start ── */
 document.getElementById('btn-start').addEventListener('click', () => {
  document.getElementById('intro').classList.add('hide');
  goScene(0, true);
 });
 
-/* ── Controls ── */
 document.getElementById('play-pause').addEventListener('click', togglePlay);
 document.getElementById('btn-prev').addEventListener('click', () => { goScene(Math.max(0, current - 1)); });
 document.getElementById('btn-next').addEventListener('click', () => { goScene(Math.min(totalScenes-1, current+1)); });
 
-/* ── Replay ── */
 document.getElementById('btn-replay').addEventListener('click', (e) => {
  e.preventDefault();
  hideOutro();
  goScene(0, true);
 });
 
-/* ── Watch Full Video button — smooth scroll + pause slideshow ── */
 document.getElementById('btn-watch-video').addEventListener('click', (e) => {
  pausePlay();
  hideOutro();
@@ -492,12 +451,10 @@ document.getElementById('btn-watch-video').addEventListener('click', (e) => {
  }, 150);
 });
 
-/* ── Progress bar click ── */
 document.getElementById('progress-track').addEventListener('click', function(e) {
  const rect = this.getBoundingClientRect();
  const pct  = (e.clientX - rect.left) / rect.width;
  const targetTime = pct * totalDur;
- // Find which scene
  let si = 0;
  for (let i = sceneStarts.length - 1; i >= 0; i--) {
    if (targetTime >= sceneStarts[i]) { si = i; break; }
@@ -515,7 +472,6 @@ document.getElementById('progress-track').addEventListener('click', function(e) 
  if (!playing) startPlay();
 });
 
-/* ── Speed toggle ── */
 const speeds = [1, 1.5, 2, 0.75];
 let speedIdx = 0;
 document.getElementById('speed-btn').addEventListener('click', function() {
@@ -524,7 +480,6 @@ document.getElementById('speed-btn').addEventListener('click', function() {
  this.textContent = speedMul + '×';
 });
 
-/* ── Keyboard shortcuts ── */
 document.addEventListener('keydown', e => {
  if (e.target.tagName === 'INPUT') return;
  if (e.key === ' ')           { e.preventDefault(); togglePlay(); }
@@ -533,7 +488,6 @@ document.addEventListener('keydown', e => {
  if (e.key === 'f' || e.key === 'F') { toggleFS(); }
 });
 
-/* ── Fullscreen ── */
 function toggleFS() {
  if (!document.fullscreenElement) {
    document.getElementById('stage').requestFullscreen?.();
@@ -543,7 +497,6 @@ function toggleFS() {
 }
 document.getElementById('btn-fs').addEventListener('click', toggleFS);
 
-/* ── Click stage to pause/resume (not on controls) ── */
 document.getElementById('stage').addEventListener('click', function(e) {
  const skip = ['controls','intro','outro','lbprev','lbnext'].some(id => {
    const el = document.getElementById(id);
@@ -555,12 +508,10 @@ document.getElementById('stage').addEventListener('click', function(e) {
  }
 });
 
-/* ── Show intro on load ── */
 window.addEventListener('load', () => {
  scenes[0].classList.add('active');
 });
 
-/* ── Touch swipe support ── */
 let touchX = 0;
 document.getElementById('stage').addEventListener('touchstart', e => { touchX = e.touches[0].clientX; });
 document.getElementById('stage').addEventListener('touchend', e => {

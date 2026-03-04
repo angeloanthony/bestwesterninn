@@ -6,13 +6,13 @@
   <title>FAQ — Extended Stay Hotel Vernal UT | Best Western Vernal Questions Answered</title>
   <meta name="description" content="Answers to the most common questions about Best Western Extended Stay in Vernal, Utah. Weekly rates, pet policy, breakfast, check-in times, kitchenettes, jacuzzi suites, and more.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://bestwesternvernal.com/faq.html">
-  <link rel="alternate" hreflang="en-us" href="https://bestwesternvernal.com/faq.html">
+  <link rel="canonical" href="https://bestwesternvernalinn.com/faq.html">
+  <link rel="alternate" hreflang="en-us" href="https://bestwesternvernalinn.com/faq.html">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="FAQ — Best Western Extended Stay Vernal Utah">
   <meta name="twitter:description" content="Weekly rates from $588, pet policy, free breakfast, check-in times, kitchenettes, monthly contractor rates. Call (435) 789-6625.">
-  <meta name="twitter:image" content="https://bestwesternvernal.com/images/35.webp">
+  <meta name="twitter:image" content="https://bestwesternvernalinn.com/images/35.webp">
 
   <script type="application/ld+json">
   {
@@ -23,16 +23,16 @@
     "worksFor": {
       "@type": "Hotel",
       "name": "Best Western Extended Stay Vernal",
-      "url": "https://bestwesternvernal.com"
+      "url": "https://bestwesternvernalinn.com"
     }
   }
   </script>
 
   <meta property="og:title" content="FAQ — Best Western Extended Stay Vernal Utah">
   <meta property="og:description" content="Everything you need to know: weekly rates from $588, free hot breakfast, pet policy, check-in times, jacuzzi suites, kitchenettes, and monthly rates. Call (435) 789-6625.">
-  <meta property="og:url" content="https://bestwesternvernal.com/faq.html">
+  <meta property="og:url" content="https://bestwesternvernalinn.com/faq.html">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://bestwesternvernal.com/images/35.webp">
+  <meta property="og:image" content="https://bestwesternvernalinn.com/images/35.webp">
   <meta property="og:locale" content="en_US">
 
   <script type="application/ld+json">
@@ -74,7 +74,6 @@
       border: 0;
     }
     
-    /* Ensure the answer container is ready for animation */
     .faq-a {
       max-height: 0;
       overflow: hidden;
@@ -301,15 +300,12 @@
 document.addEventListener('DOMContentLoaded', () => {
   const faqContainer = document.querySelector('.faq-categories') || document.body;
 
-  // Single delegated click listener — much more efficient
   faqContainer.addEventListener('click', function(e) {
-    // Find the nearest .faq-q button (works even if click is on arrow or text)
     const btn = e.target.closest('.faq-q');
     if (!btn) return;
 
     const answer = btn.nextElementSibling;
     
-    // Safety: make sure we actually found the answer div
     if (!answer || !answer.classList.contains('faq-a')) {
       console.warn('No matching .faq-a found for this .faq-q');
       return;
@@ -317,7 +313,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const isOpen = btn.classList.contains('open');
 
-    // Close all other open items first
     document.querySelectorAll('.faq-q.open').forEach(otherBtn => {
       if (otherBtn !== btn) {
         otherBtn.classList.remove('open');
@@ -330,27 +325,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     if (isOpen) {
-      // Close this one
       btn.classList.remove('open');
       answer.style.maxHeight = null;
       answer.style.padding = '0 22px';
     } else {
-      // Open this one
       btn.classList.add('open');
-      
-      // Apply full padding first (so scrollHeight includes it)
       answer.style.padding = '20px 22px';
-
-      // Wait one frame → browser reflows → accurate height
       requestAnimationFrame(() => {
-        // Small buffer prevents cutoff from nested margins/padding
         const neededHeight = answer.scrollHeight + 40;
         answer.style.maxHeight = neededHeight + 'px';
       });
     }
   });
 
-  // Optional: close all button (add HTML: <button id="close-all-faq">Close All</button>)
   document.getElementById('close-all-faq')?.addEventListener('click', () => {
     document.querySelectorAll('.faq-q.open').forEach(btn => {
       btn.classList.remove('open');
@@ -363,13 +350,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Nav scroll + scroll-to-top
 window.addEventListener('scroll',()=>{
   document.getElementById('nav').classList.add('scrolled');
   document.getElementById('stop').classList.toggle('show',scrollY>400);
 });
 
-// Hamburger
 document.getElementById('burger').addEventListener('click',function(){
   this.classList.toggle('open');
   document.getElementById('mm').classList.toggle('open');
