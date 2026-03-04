@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://bestwesternvernal.com/sitemap.xml
+Sitemap: https://bestwesternvernalinn.com/sitemap.xml
