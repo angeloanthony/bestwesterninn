@@ -31,30 +31,43 @@
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="https://bestwesternvernalinn.com" class="nav-logo">
-    Best Western <span class="nav-badge">Vernal</span>
+  <a class="nav-logo" href="/">
+    <img src="images/logo.webp" alt="Best Western Extended Stay Vernal Utah" class="nav-logo-img">
+    Best Western · Vernal
   </a>
   <ul class="nav-links">
-    <li><a href="/extended-stay" class="nav-active">Extended Stay</a></li>
-    <li><a href="/workforce-crew-housing">Work Crews</a></li>
-    <li><a href="/pet-friendly">Pet Friendly</a></li>
-    <li><a href="/dinosaur-national-monument">Near Monument</a></li>
-    <li><a href="/hotel-prices">Prices</a></li>
-    <li><a href="https://bestwesternvernalinn.com" class="nav-cta">Book Now</a></li>
+    <li class="nav-drop-wrap">
+      <a href="/" class="nav-drop-trigger">Home ▾</a>
+      <ul class="nav-dropdown">
+        <li><a href="/#rooms">🛏️ Rooms</a></li>
+        <li><a href="/#gallery">🖼️ Gallery</a></li>
+        <li><a href="/#amenities">✨ Amenities</a></li>
+        <li><a href="/#location">📍 Location</a></li>
+      </ul>
+    </li>
+    <li><a href="/explore">Explore Vernal</a></li>
+    <li><a href="/faq">FAQ</a></li>
+    <li><a href="/video">▶ Our Story</a></li>
   </ul>
-  <button class="burger" id="burger" aria-label="Menu">
+  <a class="nav-phone" href="tel:4357896625">📞 (435) 789-6625</a>
+  <a class="nav-cta" href="https://www.theworld24.com/booking/executiveinnsuites.php" target="_blank">Book Now</a>
+  <button class="burger" id="burger">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<nav class="mmenu" id="mmenu">
-  <a href="/extended-stay">Extended Stay</a>
-  <a href="/workforce-crew-housing">Work Crews</a>
-  <a href="/pet-friendly">Pet Friendly</a>
-  <a href="/dinosaur-national-monument">Near Monument</a>
-  <a href="/hotel-prices">Prices</a>
-  <a href="https://bestwesternvernalinn.com" style="color:var(--gold)">Book Now</a>
-</nav>
+<div class="mmenu" id="mm">
+  <a href="/" onclick="cm()">Home</a>
+  <a href="/#rooms" onclick="cm()">Rooms</a>
+  <a href="/#gallery" onclick="cm()">Gallery</a>
+  <a href="/#amenities" onclick="cm()">Amenities</a>
+  <a href="/#location" onclick="cm()">Location</a>
+  <a href="/explore" onclick="cm()">Explore Vernal</a>
+  <a href="/faq" style="color:var(--gold)">FAQ</a>
+  <a href="/video" style="color:var(--gold)">▶ Our Story</a>
+  <a href="https://www.theworld24.com/booking/executiveinnsuites.php" target="_blank" style="color:var(--gold)">Book Now →</a>
+  <a href="tel:4357896625" style="color:var(--gold);font-size:1.1rem;font-weight:900;letter-spacing:1px;">📞 (435) 789-6625</a>
+</div>
 
 <!-- HERO -->
 <div class="page-hero">
@@ -64,7 +77,7 @@
     <p class="hsub">Flexible weekly and monthly rates for work, travel, or long-term visits — with everything you need to settle in comfortably.</p>
     <div class="hbtns">
       <a href="https://bestwesternvernalinn.com" class="btn-p">Book Online</a>
-      <a href="tel:+18015971696" class="btn-s">📞 (801) 597-1696</a>
+      <a href="tel:4357896625" class="btn-s">📞 (435) 789-6625</a>
     </div>
   </div>
 </div>
@@ -74,7 +87,7 @@
   <div class="pi"><span class="ic">🛏️</span><div><div class="label">Comfortable Rooms</div><div class="sub">For nightly, weekly & monthly</div></div></div>
   <div class="pi"><span class="ic">🚗</span><div><div class="label">Free Parking</div><div class="sub">Including oversized vehicles</div></div></div>
   <div class="pi"><span class="ic">📶</span><div><div class="label">Free Wi-Fi</div><div class="sub">Throughout your stay</div></div></div>
-  <div class="pi"><span class="ic">💬</span><div><div class="label">Text or WhatsApp</div><div class="sub">(801) 597-1696</div></div></div>
+  <div class="pi"><span class="ic">💬</span><div><div class="label">Text or WhatsApp</div><div class="sub">(435) 789-6625</div></div></div>
 </div>
 
 <!-- CONTENT -->
@@ -132,15 +145,15 @@
   <h2>Book Your Extended Stay in Vernal</h2>
   <p>Reach us however works best — we respond fast.</p>
   <div class="contact-options">
-    <a href="tel:+18015971696" class="contact-opt">
+    <a href="tel:4357896625" class="contact-opt">
       <span class="icon">📞</span>
       <span class="lbl">Call Us</span>
-      <span class="val">(801) 597-1696</span>
+      <span class="val">(435) 789-6625</span>
     </a>
-    <a href="sms:+18015971696" class="contact-opt">
+    <a href="sms:4357896625" class="contact-opt">
       <span class="icon">💬</span>
       <span class="lbl">Text or WhatsApp</span>
-      <span class="val">(801) 597-1696</span>
+      <span class="val">(435) 789-6625</span>
     </a>
     <a href="https://bestwesternvernalinn.com" class="contact-opt book">
       <span class="icon">🌐</span>
@@ -168,7 +181,7 @@
 
         <div class="faq-item">
           <button class="faq-q">Do you offer weekly or monthly rates? <span class="faq-arrow">▼</span></button>
-          <div class="faq-a"><p>Yes. Weekly and monthly rates are available and offer better per-night value than standard nightly pricing. Call or text (801) 597-1696 for current rates.</p></div>
+          <div class="faq-a"><p>Yes. Weekly and monthly rates are available and offer better per-night value than standard nightly pricing. Call or text (435) 789-6625 for current rates.</p></div>
         </div>
 
         <div class="faq-item">
@@ -198,7 +211,7 @@
 
         <div class="faq-item">
           <button class="faq-q">What is the best way to book an extended stay? <span class="faq-arrow">▼</span></button>
-          <div class="faq-a"><p>The fastest way is to call or text (801) 597-1696. You can also book online at <a href="https://bestwesternvernalinn.com">bestwesternvernalinn.com</a>.</p></div>
+          <div class="faq-a"><p>The fastest way is to call or text (435) 789-6625. You can also book online at <a href="https://bestwesternvernalinn.com">bestwesternvernalinn.com</a>.</p></div>
         </div>
 
         <div class="faq-item">
@@ -227,7 +240,7 @@
     <a href="/hotel-prices">Prices</a>
     <a href="https://bestwesternvernalinn.com">Book Now</a>
   </div>
-  <p>© 2026 Best Western Extended Stay Vernal &nbsp;|&nbsp; <a href="tel:+18015971696">(801) 597-1696</a> &nbsp;|&nbsp; <a href="https://bestwesternvernalinn.com">bestwesternvernalinn.com</a></p>
+  <p>© 2026 Best Western Extended Stay Vernal &nbsp;|&nbsp; <a href="tel:4357896625">(435) 789-6625</a> &nbsp;|&nbsp; <a href="https://bestwesternvernalinn.com">bestwesternvernalinn.com</a></p>
 </footer>
 
 <button id="stop" title="Back to top">↑</button>

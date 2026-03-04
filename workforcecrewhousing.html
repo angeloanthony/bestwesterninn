@@ -25,36 +25,42 @@
 <body>
 
 <nav id="nav">
-  <a href="https://bestwesternvernalinn.com" class="nav-logo">Best Western <span class="nav-badge">Vernal</span></a>
+  <a class="nav-logo" href="/">
+    <img src="images/logo.webp" alt="Best Western Extended Stay Vernal Utah" class="nav-logo-img">
+    Best Western · Vernal
+  </a>
   <ul class="nav-links">
-    <li><a href="/extended-stay">Extended Stay</a></li>
-    <li><a href="/workforce-crew-housing" class="nav-active">Work Crews</a></li>
-    <li><a href="/pet-friendly">Pet Friendly</a></li>
-    <li><a href="/dinosaur-national-monument">Near Monument</a></li>
-    <li><a href="/hotel-prices">Prices</a></li>
-    <li><a href="https://bestwesternvernalinn.com" class="nav-cta">Book Now</a></li>
+    <li class="nav-drop-wrap">
+      <a href="/" class="nav-drop-trigger">Home ▾</a>
+      <ul class="nav-dropdown">
+        <li><a href="/#rooms">🛏️ Rooms</a></li>
+        <li><a href="/#gallery">🖼️ Gallery</a></li>
+        <li><a href="/#amenities">✨ Amenities</a></li>
+        <li><a href="/#location">📍 Location</a></li>
+      </ul>
+    </li>
+    <li><a href="/explore">Explore Vernal</a></li>
+    <li><a href="/faq">FAQ</a></li>
+    <li><a href="/video">▶ Our Story</a></li>
   </ul>
-  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
-</nav>
-<nav class="mmenu" id="mmenu">
-  <a href="/extended-stay">Extended Stay</a>
-  <a href="/workforce-crew-housing">Work Crews</a>
-  <a href="/pet-friendly">Pet Friendly</a>
-  <a href="/dinosaur-national-monument">Near Monument</a>
-  <a href="/hotel-prices">Prices</a>
-  <a href="https://bestwesternvernalinn.com" style="color:var(--gold)">Book Now</a>
+  <a class="nav-phone" href="tel:4357896625">📞 (435) 789-6625</a>
+  <a class="nav-cta" href="https://www.theworld24.com/booking/executiveinnsuites.php" target="_blank">Book Now</a>
+  <button class="burger" id="burger">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
-<div class="page-hero">
-  <div class="page-hero-cnt">
-    <div class="eyebrow">Workforce & Crew Lodging · Vernal, Utah</div>
-    <h1 class="htitle">Crew Lodging &<br><em>Workforce Housing</em></h1>
-    <p class="hsub">Group bookings, corporate billing, truck parking, and flexible long-term rates — built for how crews actually work.</p>
-    <div class="hbtns">
-      <a href="sms:+18015971696" class="btn-p">💬 Text or WhatsApp</a>
-      <a href="tel:+18015971696" class="btn-s">📞 (801) 597-1696</a>
-    </div>
-  </div>
+<div class="mmenu" id="mm">
+  <a href="/" onclick="cm()">Home</a>
+  <a href="/#rooms" onclick="cm()">Rooms</a>
+  <a href="/#gallery" onclick="cm()">Gallery</a>
+  <a href="/#amenities" onclick="cm()">Amenities</a>
+  <a href="/#location" onclick="cm()">Location</a>
+  <a href="/explore" onclick="cm()">Explore Vernal</a>
+  <a href="/faq" style="color:var(--gold)">FAQ</a>
+  <a href="/video" style="color:var(--gold)">▶ Our Story</a>
+  <a href="https://www.theworld24.com/booking/executiveinnsuites.php" target="_blank" style="color:var(--gold)">Book Now →</a>
+  <a href="tel:4357896625" style="color:var(--gold);font-size:1.1rem;font-weight:900;letter-spacing:1px;">📞 (435) 789-6625</a>
 </div>
 
 <div class="pbar">
@@ -96,7 +102,7 @@
   <section class="content-section rv">
     <h2>Group Bookings Made Simple</h2>
     <p>Coordinating rooms for a crew shouldn't be complicated. We offer room blocks for groups of all sizes — whether it's 4 workers or more. Book together, stay together, and manage it all through one contact.</p>
-    <p>To reserve rooms for your crew, call or text <strong>(801) 597-1696</strong> directly — we'll get everything set up fast.</p>
+    <p>To reserve rooms for your crew, call or text <strong>(435) 789-6625</strong> directly — we'll get everything set up fast.</p>
   </section>
 
   <section class="content-section rv">
@@ -125,8 +131,8 @@
   <h2>Ready to Book Rooms for Your Crew?</h2>
   <p>Fastest response by text or WhatsApp — we get back to you quickly.</p>
   <div class="contact-options">
-    <a href="tel:+18015971696" class="contact-opt"><span class="icon">📞</span><span class="lbl">Call Us</span><span class="val">(801) 597-1696</span></a>
-    <a href="sms:+18015971696" class="contact-opt"><span class="icon">💬</span><span class="lbl">Text or WhatsApp</span><span class="val">(801) 597-1696</span></a>
+    <a href="tel:4357896625" class="contact-opt"><span class="icon">📞</span><span class="lbl">Call Us</span><span class="val">(435) 789-6625</span></a>
+    <a href="sms:4357896625" class="contact-opt"><span class="icon">💬</span><span class="lbl">Text or WhatsApp</span><span class="val">(435) 789-6625</span></a>
     <a href="https://bestwesternvernalinn.com" class="contact-opt book"><span class="icon">🌐</span><span class="lbl">Book Online</span><span class="val">bestwesternvernalinn.com</span></a>
   </div>
 </div>
@@ -144,12 +150,12 @@
         <div class="faq-item"><button class="faq-q">Do you offer corporate billing for companies? <span class="faq-arrow">▼</span></button><div class="faq-a"><p>Yes. We can set up direct corporate billing so your company pays directly rather than individual workers out of pocket.</p></div></div>
         <div class="faq-item"><button class="faq-q">Is there parking for trucks and work vehicles? <span class="faq-arrow">▼</span></button><div class="faq-a"><p>Yes. We have parking available for trucks, trailers, and oversized work vehicles.</p></div></div>
         <div class="faq-item"><button class="faq-q">Can we extend our stay if the project runs longer? <span class="faq-arrow">▼</span></button><div class="faq-a"><p>Yes. We offer flexible extended stay options. Just let us know and we'll work with your timeline — no rigid commitments.</p></div></div>
-        <div class="faq-item"><button class="faq-q">Do you offer weekly or long-term rates for crews? <span class="faq-arrow">▼</span></button><div class="faq-a"><p>Yes. Extended stay rates are available for longer bookings. Call or text (801) 597-1696 for current pricing.</p></div></div>
-        <div class="faq-item"><button class="faq-q">How do we book rooms for a whole crew? <span class="faq-arrow">▼</span></button><div class="faq-a"><p>The easiest way is to call or text (801) 597-1696 directly. We'll coordinate the room block for your group quickly.</p></div></div>
+        <div class="faq-item"><button class="faq-q">Do you offer weekly or long-term rates for crews? <span class="faq-arrow">▼</span></button><div class="faq-a"><p>Yes. Extended stay rates are available for longer bookings. Call or text (435) 789-6625 for current pricing.</p></div></div>
+        <div class="faq-item"><button class="faq-q">How do we book rooms for a whole crew? <span class="faq-arrow">▼</span></button><div class="faq-a"><p>The easiest way is to call or text (435) 789-6625 directly. We'll coordinate the room block for your group quickly.</p></div></div>
         <div class="faq-item"><button class="faq-q">Is this hotel close to oilfield and construction sites in Vernal? <span class="faq-arrow">▼</span></button><div class="faq-a"><p>Yes. We're centrally located in Vernal with convenient access to job sites throughout the Uinta Basin.</p></div></div>
         <div class="faq-item"><button class="faq-q">Can individual workers book under a company account? <span class="faq-arrow">▼</span></button><div class="faq-a"><p>Yes. Arrangements like this can be discussed when setting up corporate billing. Contact us to work out the details.</p></div></div>
         <div class="faq-item"><button class="faq-q">Do you offer early check-in for crews with early start times? <span class="faq-arrow">▼</span></button><div class="faq-a"><p>Contact us when booking to discuss early check-in availability for your group.</p></div></div>
-        <div class="faq-item"><button class="faq-q">What is the best way to contact you for a group booking? <span class="faq-arrow">▼</span></button><div class="faq-a"><p>Call or text (801) 597-1696 — or reach us on WhatsApp at the same number. We respond quickly to crew inquiries.</p></div></div>
+        <div class="faq-item"><button class="faq-q">What is the best way to contact you for a group booking? <span class="faq-arrow">▼</span></button><div class="faq-a"><p>Call or text (435) 789-6625 — or reach us on WhatsApp at the same number. We respond quickly to crew inquiries.</p></div></div>
       </div>
     </div>
   </div>
@@ -165,13 +171,14 @@
     <a href="/hotel-prices">Prices</a>
     <a href="https://bestwesternvernalinn.com">Book Now</a>
   </div>
-  <p>© 2026 Best Western Extended Stay Vernal &nbsp;|&nbsp; <a href="tel:+18015971696">(801) 597-1696</a> &nbsp;|&nbsp; <a href="https://bestwesternvernalinn.com">bestwesternvernalinn.com</a></p>
+  <p>© 2026 Best Western Extended Stay Vernal &nbsp;|&nbsp; <a href="tel:4357896625">(435) 789-6625</a> &nbsp;|&nbsp; <a href="https://bestwesternvernalinn.com">bestwesternvernalinn.com</a></p>
 </footer>
 <button id="stop" title="Back to top">↑</button>
 <script>
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); document.getElementById('stop').classList.toggle('show', window.scrollY > 400); });
-  document.getElementById('burger').addEventListener('click', function() { this.classList.toggle('open'); document.getElementById('mmenu').classList.toggle('open'); });
+  function cm(){document.getElementById('burger').classList.remove('open');document.getElementById('mm').classList.remove('open');}
+  document.getElementById('burger').addEventListener('click',function(){this.classList.toggle('open');document.getElementById('mm').classList.toggle('open');});
   document.getElementById('stop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   document.querySelectorAll('.faq-q').forEach(btn => { btn.addEventListener('click', () => { const isOpen = btn.classList.contains('open'); document.querySelectorAll('.faq-q.open').forEach(b => b.classList.remove('open')); if (!isOpen) btn.classList.add('open'); }); });
   const observer = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); observer.unobserve(e.target); } }); }, { threshold: 0.12 });
