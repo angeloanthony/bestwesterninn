@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Best Western Vernal Inn</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav id="nav" class="scrolled">
+    <a href="/" class="nav-logo">Best Western Vernal Inn</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/explore">Explore</a></li>
+      <li><a href="/faq">FAQ</a></li>
+    </ul>
+    <a href="tel:14357813883" class="nav-cta">Call Us</a>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="page-hero">
+    <div class="page-hero-cnt">
+      <p class="eyebrow">404 Error</p>
+      <h1 class="htitle">Page Not <em>Found</em></h1>
+      <p class="hsub">Sorry, that page doesn't exist or may have moved. Let's get you back on track.</p>
+      <div class="hbtns">
+        <a href="/" class="btn-p">Back to Homepage</a>
+        <a href="/faq" class="btn-s">Visit FAQ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Perks Bar ── -->
+  <div class="pbar">
+    <div class="pi"><span class="ic">🏨</span><div><div class="label">Extended Stay</div><div class="sub">Weekly &amp; Monthly Rates</div></div></div>
+    <div class="pi"><span class="ic">🐾</span><div><div class="label">Pet Friendly</div><div class="sub">Dogs Welcome</div></div></div>
+    <div class="pi"><span class="ic">📍</span><div><div class="label">Vernal, Utah</div><div class="sub">Near Dinosaur National Monument</div></div></div>
+    <div class="pi"><span class="ic">📞</span><div><div class="label">(435) 781-3883</div><div class="sub">Call Anytime</div></div></div>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="flogo">Best Western Vernal Inn</div>
+    <div class="flinks">
+      <a href="/">Home</a>
+      <a href="/extended-stay">Extended Stay</a>
+      <a href="/weekly-rates">Weekly Rates</a>
+      <a href="/petfriendly">Pet Friendly</a>
+      <a href="/explore">Explore Vernal</a>
+      <a href="/faq">FAQ</a>
+    </div>
+    <p>&copy; 2026 Best Western Vernal Inn &nbsp;·&nbsp; Vernal, Utah &nbsp;·&nbsp; <a href="tel:14357813883">(435) 781-3883</a></p>
+  </footer>
+
+  <!-- ── Nav scroll behavior ── -->
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    });
+  </script>
+
+</body>
+</html>
