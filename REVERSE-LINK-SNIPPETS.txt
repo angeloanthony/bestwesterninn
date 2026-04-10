@@ -1,0 +1,73 @@
+
+========================================================================
+REVERSE LINK SNIPPETS
+Paste these into the corresponding existing pages.
+Add BEFORE the CTA contact block (before <div class="cta-contact">)
+========================================================================
+
+--- dinosaurnationalmonument.html ---
+<div class="pro-tip" style="border-left-color:var(--gold);margin:2rem 0;">
+ <p><strong>Looking for a place to stay?</strong> <a href="hotel-near-dinosaur-national-monument.html" style="color:var(--navy);font-weight:700;">Best Western Vernal Inn is the closest full-service hotel to Dinosaur National Monument</a> — just 20 miles from the Quarry Exhibit Hall. Weekly rates from $588, free breakfast, kitchenettes, and pet friendly rooms. <a href="tel:4357896625" style="color:var(--navy);font-weight:700;">Call (435) 789-6625</a>.</p>
+</div>
+
+--- flaming-gorge.html ---
+<div class="pro-tip" style="border-left-color:var(--gold);margin:2rem 0;">
+ <p><strong>Need a hotel near Flaming Gorge?</strong> <a href="hotel-near-flaming-gorge.html" style="color:var(--navy);font-weight:700;">Best Western Vernal Inn is your southern gateway to the gorge</a> — approximately 40 miles from the dam via Highway 191. Weekly rates from $588, free breakfast, and parking for boats and trailers. <a href="tel:4357896625" style="color:var(--navy);font-weight:700;">Call (435) 789-6625</a>.</p>
+</div>
+
+--- red-fleet-state-park.html ---
+<div class="pro-tip" style="border-left-color:var(--gold);margin:2rem 0;">
+ <p><strong>Staying overnight?</strong> <a href="hotel-near-red-fleet-state-park.html" style="color:var(--navy);font-weight:700;">Best Western Vernal Inn is just 12 miles from Red Fleet State Park</a> — the closest full-service hotel. Rates from $84/night with free breakfast and pet friendly rooms. <a href="tel:4357896625" style="color:var(--navy);font-weight:700;">Call (435) 789-6625</a>.</p>
+</div>
+
+--- things-to-do-vernal-utah.html ---
+ADD THESE INTERNAL LINKS somewhere in the body (ideally in each attraction section):
+
+In the Dinosaur Monument section:
+<a href="hotel-near-dinosaur-national-monument.html">Hotel near Dinosaur National Monument →</a>
+
+In the Flaming Gorge section:
+<a href="hotel-near-flaming-gorge.html">Hotel near Flaming Gorge →</a>
+
+In the Red Fleet section:
+<a href="hotel-near-red-fleet-state-park.html">Hotel near Red Fleet State Park →</a>
+
+Also add a general "Where to Stay" section at the bottom:
+<div class="content-section">
+ <h2>Where to Stay in Vernal</h2>
+ <p>Best Western Vernal Inn is centrally located in Vernal — close to every attraction on this list. Whether you're here for a weekend or a full week, our rates start at $84/night with free breakfast, kitchenettes, and pet friendly rooms.</p>
+ <ul class="feat-list">
+  <li><a href="hotel-near-dinosaur-national-monument.html" style="color:var(--navy);font-weight:700;">Hotel Near Dinosaur National Monument</a> — 20 miles</li>
+  <li><a href="hotel-near-flaming-gorge.html" style="color:var(--navy);font-weight:700;">Hotel Near Flaming Gorge</a> — 40 miles</li>
+  <li><a href="hotel-near-red-fleet-state-park.html" style="color:var(--navy);font-weight:700;">Hotel Near Red Fleet State Park</a> — 12 miles</li>
+  <li><a href="hotel-near-vernal-airport.html" style="color:var(--navy);font-weight:700;">Hotel Near Vernal Airport</a> — 0.6 miles</li>
+  <li><a href="hotel-near-ashley-national-forest.html" style="color:var(--navy);font-weight:700;">Hotel Near Ashley National Forest</a> — 15 miles</li>
+  <li><a href="cheap-hotel-vernal-utah.html" style="color:var(--navy);font-weight:700;">Affordable Rates in Vernal</a> — from $84/night</li>
+  <li><a href="extended-stay-hotel-vernal-utah.html" style="color:var(--navy);font-weight:700;">Extended Stay Hotel</a> — weekly from $588</li>
+  <li><a href="pet-friendly-hotel-vernal-utah.html" style="color:var(--navy);font-weight:700;">Pet Friendly Hotel</a> — dogs welcome</li>
+ </ul>
+</div>
+
+--- oilfield-housing-vernal.html ---
+<div class="pro-tip" style="border-left-color:var(--gold);margin:2rem 0;">
+ <p><strong>See also:</strong> <a href="workforce-housing-vernal-utah.html" style="color:var(--navy);font-weight:700;">Workforce Housing in Vernal</a> · <a href="hotel-near-vernal-airport.html" style="color:var(--navy);font-weight:700;">Hotel Near Vernal Airport (0.6 miles)</a> · <a href="extended-stay-hotel-vernal-utah.html" style="color:var(--navy);font-weight:700;">Extended Stay Rates</a></p>
+</div>
+
+--- workforcecrewhousing.html ---
+<div class="pro-tip" style="border-left-color:var(--gold);margin:2rem 0;">
+ <p><strong>See also:</strong> <a href="workforce-housing-vernal-utah.html" style="color:var(--navy);font-weight:700;">Workforce Housing in Vernal</a> · <a href="hotel-near-vernal-airport.html" style="color:var(--navy);font-weight:700;">Hotel Near Vernal Airport</a> · <a href="weekly-hotel-rates-vernal-utah.html" style="color:var(--navy);font-weight:700;">Weekly Hotel Rates</a></p>
+</div>
+
+--- petfriendly.html ---
+<div class="pro-tip" style="border-left-color:var(--gold);margin:2rem 0;">
+ <p><strong>See also:</strong> <a href="pet-friendly-hotel-vernal-utah.html" style="color:var(--navy);font-weight:700;">Pet Friendly Hotel in Vernal</a> — full guide to dog-friendly trails, parks, and what to expect. · <a href="hotel-near-red-fleet-state-park.html" style="color:var(--navy);font-weight:700;">Hotel Near Red Fleet (dogs welcome, 12 miles)</a></p>
+</div>
+
+--- extended-stay.html ---
+<div class="pro-tip" style="border-left-color:var(--gold);margin:2rem 0;">
+ <p><strong>See also:</strong> <a href="extended-stay-hotel-vernal-utah.html" style="color:var(--navy);font-weight:700;">Extended Stay Hotel in Vernal</a> — full breakdown of weekly and monthly rates, kitchenettes, and who stays with us. · <a href="weekly-hotel-rates-vernal-utah.html" style="color:var(--navy);font-weight:700;">Weekly Hotel Rates</a></p>
+</div>
+
+========================================================================
+END SNIPPETS
+========================================================================
